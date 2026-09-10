@@ -1,0 +1,13 @@
+[
+  {"feature": "B_total_meas_nT", "importance": 0.184},
+  {"feature": "B_proj_D1_nT", "importance": 0.142},
+  {"feature": "Bz_meas_nT", "importance": 0.128},
+  {"feature": "B_proj_D3_nT", "importance": 0.109},
+  {"feature": "Bx_meas_nT", "importance": 0.098},
+  {"feature": "B_proj_D2_nT", "importance": 0.087},
+  {"feature": "By_meas_nT", "importance": 0.076},
+  {"feature": "B_proj_D4_nT", "importance": 0.061},
+  {"feature": "yaw_deg", "importance": 0.045},
+  {"feature": "pitch_deg", "importance": 0.038},
+  {"feature": "roll_deg", "importance": 0.032}
+]
