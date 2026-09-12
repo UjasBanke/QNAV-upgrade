@@ -32,6 +32,9 @@ const MODEL_LABELS = {
 const HIDDEN_METRIC_KEYS = new Set([
   "model",
   "p95_position_error_m",
+  "max_position_error_m",
+  "CEP50_m",
+  "CEP95_m",
   "NLL",
   "coverage_95",
   "calibration_error",
@@ -83,7 +86,16 @@ export default function MLUpgradeModule() {
           value={finalModel ? `${finalModel.position_MAE_m.toFixed(1)} m` : "—"}
           color="#0369a1"
         />
-        
+        <MiniStat
+          label="CEP50 (final)"
+          value={finalModel ? `${finalModel.CEP50_m.toFixed(1)} m` : "—"}
+          color="#0e7490"
+        />
+        <MiniStat
+          label="CEP95 (final)"
+          value={finalModel ? `${finalModel.CEP95_m.toFixed(1)} m` : "—"}
+          color="#c2650c"
+        />
         <MiniStat
           label="Improvement vs BiLSTM"
           value={improvementPct !== null ? `${improvementPct}%` : "—"}
